@@ -1,4 +1,4 @@
-# Python
+# Python & Backend
 __pycache__/
 *.py[cod]
 *$py.class
@@ -7,33 +7,29 @@ __pycache__/
 env/
 venv/
 ENV/
-.venv/
-
-# Data & Datasets
-data/
-*.jpg
-*.JPG
-*.jpeg
-*.JPEG
-*.png
-*.PNG
-
-# Models / Weights
-*.pt
-*.pth
-*.h5
-*.onnx
-
-# Training outputs
-runs/
-outputs/
-*.log
-
-# Streamlit / IDE
-.streamlit/
-.idea/
-.vscode/
-.DS_Store
-
-# Environment
 .env
+backend/.env
+backend/storage/results/*
+!backend/storage/results/.gitkeep
+
+# Weights (keep README, ignore large binaries)
+backend/models/*.pth
+backend/models/*.pt
+backend/models/*.keras
+backend/models/*.h5
+backend/models/*.onnx
+!backend/models/README.md
+
+# Node & Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
